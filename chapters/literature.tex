@@ -3,9 +3,11 @@ The literature review provides an extensive exploration of pertinent concepts, t
 \section{Gaming Server Configuration}
 The project involving the configuration of a gaming server with dual GPUs, dual motherboards, dual power supplies, and a single CPU intersects with the domains of hardware integration, resource allocation, and high-performance computing. Research by Smith et al. (2019) emphasizes the importance of efficient cooling mechanisms to prevent thermal throttling in high-performance gaming servers. Furthermore, the work of Johnson and Brown (2020) underlines the necessity of power management strategies to optimize energy usage in server environments.
 
+
+
+
 \section{3D Design with Fusion 360 and Blender}
 The synthesis of parametric modeling and creative expression observed in the 3D design of a computer case, utilizing Autodesk Fusion 360 and Blender, embodies the marriage of precision and innovation. The concept of parametric design, as discussed by Kim et al. (2018), empowers designers with the ability to iteratively refine and adapt designs. Additionally, studies by Smith and Jones (2019) highlight the potential of artistic freedom in design software to spur imaginative exploration within digital design projects.
-
 \begin{table}[h]
     \centering
     \caption{Comparative Features of Fusion 360 and Blender}
@@ -18,6 +20,8 @@ The synthesis of parametric modeling and creative expression observed in the 3D 
         Community Support   & \checkmark & \checkmark \\ \hline
     \end{tabular}
 \end{table}
+
+
 
 \section{Network Configuration and Data Management}
 The network configuration project, aiming to establish efficient NAS access, aligns with established principles in network architecture and data management. Research by Anderson et al. (2017) underscores the significance of VLAN segmentation for secure data communication. Furthermore, studies on NAS implementation, as explored by Wilson and Miller (2018), emphasize the importance of access control mechanisms to ensure data integrity and confidentiality.
@@ -33,4 +37,79 @@ The network configuration project, aiming to establish efficient NAS access, ali
 The project focusing on the creation of a Nextcloud server with plugins within the TrueNAS CORE environment aligns with trends in integrative solutions and cloud computing. Research by Brown and White (2019) emphasizes the significance of plugin-based extensibility to adapt cloud services to user requirements. Furthermore, discussions by Green and Harris (2020) underscore the role of open-source cloud solutions in enabling secure data sharing and collaboration.
 
 \section{Sustainability in Technology}
-The innovative utilization of e-waste components to construct a TrueNAS server aligns with the growing emphasis on sustainability in technology projects. Literature by Martinez and Lee (2021) explores the challenges of electronic waste management and highlights the potential of repurposing discarded components for eco-friendly technology solutions. Initiatives discussed by Clark and Turner (2020) illustrate the relevance of sustainable practices in technology, promoting environmental stewardship. \cite{cisco} \cite{mugume1} \cite{WinNT}
+The innovative utilization of e-waste components to construct a TrueNAS server aligns with the growing emphasis on sustainability in technology projects. Literature by Martinez and Lee (2021) explores the challenges of electronic waste management and highlights the potential of repurposing discarded components for eco-friendly technology solutions. Initiatives discussed by Clark and Turner (2020) illustrate the relevance of sustainable practices in technology, promoting environmental stewardship.
+
+
+\section{Evolution of Keyboard Protocols}
+The evolution of keyboard protocols, from PS/2 to USB, embodies the progression of technology towards universal compatibility and plug-and-play functionality. 
+
+\subsection{Key Differences and Advantages}
+The key differences between PS/2 \cite{chapweske2003ps} and USB keyboard protocols, as illustrated in 
+\cite{lee2011keyboard}, highlight the advantages of USB in terms of compatibility, latency, and hot-swapping. The universal compatibility of USB enables seamless integration with a wide range of devices.
+
+\subsection{Compatibility}
+Compatibility is the biggest positive aspect of USB keyboards and mice. From laptops and computers to smartphones, USB keyboards and mice are compatible everywhere.
+\begin{table}[htbp]
+    \centering
+    \caption{Comparison of Compatibility}
+    \begin{tabular}{|l|c|c|}
+        \hline
+        \textbf{Protocol} & \textbf{Universal Compatibility} & \textbf{Legacy Support} \\
+        \hline
+        PS/2 & Limited & Yes \\
+        \hline
+        USB & Yes & Limited (with adapters) \\
+        \hline
+    \end{tabular}
+\end{table}
+
+\subsection{Hot-Swapping}
+PS2 devices are not electrically hot-swappable. It means you cannot plug and unplug the devices without turning off the system. Doing that can freeze the system, or damage the device. But USB keyboards and mice do not have any such issues. Just plug them in and out multiple times. You will hardly face any issues.
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\linewidth]{hot-swapping.jpg}
+    \caption{Hot-Swapping Concept}
+    \label{fig:hot-swapping}
+\end{figure}
+
+\subsection{Latency}
+
+Latency, the delay between pressing a key and the corresponding action on the screen, is a critical factor in evaluating keyboard performance. It directly affects the user experience, especially in scenarios where real-time response is essential, such as gaming and professional applications.
+
+As illustrated in Figure~\ref{fig:latency-comparison}, both PS/2 and USB keyboard protocols have made significant strides in reducing latency over the years.
+
+Historically, PS/2 keyboards were favored for their lower latency compared to USB counterparts. However, with advancements in USB technology and the introduction of high polling rates, the latency gap has narrowed significantly. For most users, the difference in latency between the two protocols is now negligible, especially in everyday computing tasks.
+
+Low latency is of paramount importance in gaming, where split-second decisions can make or break a game. Gamers often prefer keyboards with low latency to ensure rapid response times to keypresses. While PS/2 keyboards held an advantage in this regard in the past, modern USB keyboards with high polling rates have largely closed the gap.
+
+In professional applications, such as video and audio editing, low latency is also crucial for achieving precise control. USB keyboards have improved to the point where they are suitable for these tasks, making them a versatile choice for professionals.
+
+In conclusion, while latency used to be a significant point of differentiation between PS/2 and USB keyboards, modern USB technology has largely mitigated this issue. Users in most scenarios can now choose between PS/2 and USB based on other factors like compatibility and convenience, with latency differences being of minimal concern.
+
+
+\subsection{N-Key Rollover}
+
+N-Key Rollover (NKRO) is a crucial feature in keyboard protocols, determining the number of keys that can be pressed simultaneously and registered by the computer. It directly impacts the keyboard's ability to accurately capture complex and rapid keypresses, which is particularly significant in gaming, professional, and fast typist scenarios.
+
+\begin{table}[htbp]
+    \centering
+    \caption{N-Key Rollover Support}
+    \begin{tabular}{|l|c|}
+        \hline
+        \textbf{Protocol} & \textbf{N-Key Rollover Support} \\
+        \hline
+        PS/2 & Yes \\
+        \hline
+        USB & Yes \\
+        \hline
+    \end{tabular}
+\end{table}
+
+Both PS/2 and USB keyboard protocols support N-Key Rollover, meaning they can register multiple simultaneous key presses accurately. This feature is highly sought after by gamers who require precision in executing complex combinations of keys during gameplay. Additionally, professionals who rely on keyboard shortcuts or individuals who type rapidly benefit from NKRO support.
+
+While both protocols support NKRO, the choice between them depends on other factors like compatibility, hot-swapping, and latency, as discussed in previous sections. In most modern applications, USB keyboards have become the preferred choice due to their universal compatibility and other advantages, and they also offer NKRO support, making them suitable for a wide range of users.
+
+N-Key Rollover is a feature that caters to users who demand exceptional keyboard performance and is a testament to the continuous evolution of keyboard protocols in meeting the diverse needs of computer users.
+
+
+
