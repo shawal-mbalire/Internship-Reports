@@ -1,13 +1,26 @@
-The literature review provides an extensive exploration of pertinent concepts, theories, and existing research that underpin the projects and activities conducted during the internship. This section serves to contextualize the practical experiences within a broader theoretical framework, incorporating relevant findings and insights from the field.
+This chapter provides an extensive exploration of pertinent concepts, theories, and existing research that underpin the projects and activities conducted during the internship. This section serves to contextualize the practical experiences within a broader theoretical framework, incorporating relevant findings and insights from the field.
+
+In this chapter, I will delve into the following key aspects:
+
+\begin{itemize}
+    \item An overview of fundamental concepts and theories encountered.
+    \item A review of recent research and developments in the field, highlighting their relevance to the internship projects.
+    \item An examination of best practices and industry standards that guided the practical work undertaken during the internship.
+\end{itemize}
+
+By presenting a robust theoretical foundation, this section aims to enhance the reader's understanding of the practical applications discussed in subsequent chapters and establish the academic context for the internship experience.
 
 \section{Gaming Server Configuration}
-The project involving the configuration of a gaming server with dual GPUs, dual motherboards, dual power supplies, and a single CPU intersects with the domains of hardware integration, resource allocation, and high-performance computing. Research by Smith et al. (2019) emphasizes the importance of efficient cooling mechanisms to prevent thermal throttling in high-performance gaming servers. Furthermore, the work of Johnson and Brown (2020) underlines the necessity of power management strategies to optimize energy usage in server environments.
 
+The project involving the configuration of a gaming server with dual GPUs, dual motherboards, dual power supplies, and a single CPU intersects with the domains of hardware integration, resource allocation, and high-performance computing. Research by \cite{ramakrishnan2021cpu} emphasizes the importance of efficient cooling mechanisms to prevent thermal throttling in high-performance gaming machines. Furthermore, the work of \cite{bianchini2004power} underlines the necessity of power management strategies to optimize energy usage in server environments.
 
+In this section, I will provide a detailed account of the gaming server configuration project, including the hardware components used, resource allocation strategies, and considerations for high-performance computing. The insights from the mentioned research studies will be integrated into the discussion to highlight their relevance to the project's objectives.
 
 
 \section{3D Design with Fusion 360 and Blender}
-The synthesis of parametric modeling and creative expression observed in the 3D design of a computer case, utilizing Autodesk Fusion 360 and Blender, embodies the marriage of precision and innovation. The concept of parametric design, as discussed by Kim et al. (2018), empowers designers with the ability to iteratively refine and adapt designs. Additionally, studies by Smith and Jones (2019) highlight the potential of artistic freedom in design software to spur imaginative exploration within digital design projects.
+
+The synthesis of parametric modeling and creative expression observed in the 3D design of a computer case, utilizing Autodesk Fusion 360 and Blender, embodies the marriage of precision and innovation. 
+
 \begin{table}[h]
     \centering
     \caption{Comparative Features of Fusion 360 and Blender}
@@ -23,29 +36,37 @@ The synthesis of parametric modeling and creative expression observed in the 3D 
 
 
 
+
 \section{Network Configuration and Data Management}
-The network configuration project, aiming to establish efficient NAS access, aligns with established principles in network architecture and data management. Research by Anderson et al. (2017) underscores the significance of VLAN segmentation for secure data communication. Furthermore, studies on NAS implementation, as explored by Wilson and Miller (2018), emphasize the importance of access control mechanisms to ensure data integrity and confidentiality.
+
+The network configuration project, aiming to establish efficient NAS access, aligns with established principles in network architecture and data management. Research by \cite{leischner2007security} underscores the significance of VLAN segmentation for secure data communication. Furthermore, studies on NAS implementation, as explored by \cite{samsico2023fortifying}, emphasize the importance of access control mechanisms to ensure data integrity and confidentiality.
 
 \begin{figure}[ht]
     \centering
-    \includegraphics[width=0.6\textwidth]{network-configuration.png}
+    \includegraphics[width=0.6\textwidth]{images/network-configuration.png}
     \caption{Sample Network Configuration}
     \label{fig:network-configuration}
 \end{figure}
-
 \section{Integrative Solutions and Cloud Computing}
-The project focusing on the creation of a Nextcloud server with plugins within the TrueNAS CORE environment aligns with trends in integrative solutions and cloud computing. Research by Brown and White (2019) emphasizes the significance of plugin-based extensibility to adapt cloud services to user requirements. Furthermore, discussions by Green and Harris (2020) underscore the role of open-source cloud solutions in enabling secure data sharing and collaboration.
+
+The project, centered around the establishment of a Nextcloud server integrated with plugins within the TrueNAS CORE environment, is in alignment with prevailing trends in integrative solutions and cloud computing. This endeavor draws inspiration from research conducted \cite{singh2021robust} which emphasizes the robust efficiency evaluation of NextCloud and GoogleCloud. Their work serves as a guiding beacon for ensuring the efficacy and reliability of our cloud-based solution.
+
+In today's dynamic technology landscape, the need for integrative cloud solutions has become increasingly apparent. The ability to seamlessly integrate and customize cloud services to meet specific user requirements is paramount. Such solutions not only facilitate secure data sharing but also promote collaborative endeavors, which are essential in our interconnected digital world.
+
+As we delve into the realm of integrative solutions and cloud computing, we are inspired by these research insights to develop a robust and adaptable cloud infrastructure that caters to the evolving needs of modern organizations.
 
 \section{Sustainability in Technology}
-The innovative utilization of e-waste components to construct a TrueNAS server aligns with the growing emphasis on sustainability in technology projects. Literature by Martinez and Lee (2021) explores the challenges of electronic waste management and highlights the potential of repurposing discarded components for eco-friendly technology solutions. Initiatives discussed by Clark and Turner (2020) illustrate the relevance of sustainable practices in technology, promoting environmental stewardship.
+
+The innovative use of e-waste components to construct a TrueNAS server is in alignment with the increasing emphasis on sustainability in technology projects. 
+
+In an era where environmental consciousness has become an imperative, the incorporation of sustainable principles into technological endeavors not only demonstrates a commitment to responsible innovation but also addresses pressing global concerns related to electronic waste. This project serves as a testament to the transformative power of sustainability in technology, promoting resource efficiency and reducing the environmental footprint of electronic devices.
 
 
 \section{Evolution of Keyboard Protocols}
 The evolution of keyboard protocols, from PS/2 to USB, embodies the progression of technology towards universal compatibility and plug-and-play functionality. 
 
 \subsection{Key Differences and Advantages}
-The key differences between PS/2 \cite{chapweske2003ps} and USB keyboard protocols, as illustrated in 
-\cite{lee2011keyboard}, highlight the advantages of USB in terms of compatibility, latency, and hot-swapping. The universal compatibility of USB enables seamless integration with a wide range of devices.
+The key differences between PS/2 \cite{chapweske2003ps} and USB keyboard protocols, as illustrated in \cite{lee2011keyboard}, highlight the advantages of USB in terms of compatibility, latency, and hot-swapping. The universal compatibility of USB enables seamless integration with a wide range of devices.
 
 \subsection{Compatibility}
 Compatibility is the biggest positive aspect of USB keyboards and mice. From laptops and computers to smartphones, USB keyboards and mice are compatible everywhere.
@@ -67,7 +88,7 @@ Compatibility is the biggest positive aspect of USB keyboards and mice. From lap
 PS2 devices are not electrically hot-swappable. It means you cannot plug and unplug the devices without turning off the system. Doing that can freeze the system, or damage the device. But USB keyboards and mice do not have any such issues. Just plug them in and out multiple times. You will hardly face any issues.
 \begin{figure}[htbp]
     \centering
-    \includegraphics[width=0.6\linewidth]{hot-swapping.jpg}
+    \includegraphics[width=0.6\linewidth]{images/hot-swapping.jpg}
     \caption{Hot-Swapping Concept}
     \label{fig:hot-swapping}
 \end{figure}
@@ -91,25 +112,11 @@ In conclusion, while latency used to be a significant point of differentiation b
 
 N-Key Rollover (NKRO) is a crucial feature in keyboard protocols, determining the number of keys that can be pressed simultaneously and registered by the computer. It directly impacts the keyboard's ability to accurately capture complex and rapid keypresses, which is particularly significant in gaming, professional, and fast typist scenarios.
 
-\begin{table}[htbp]
-    \centering
-    \caption{N-Key Rollover Support}
-    \begin{tabular}{|l|c|}
-        \hline
-        \textbf{Protocol} & \textbf{N-Key Rollover Support} \\
-        \hline
-        PS/2 & Yes \\
-        \hline
-        USB & Yes \\
-        \hline
-    \end{tabular}
-\end{table}
 
 Both PS/2 and USB keyboard protocols support N-Key Rollover, meaning they can register multiple simultaneous key presses accurately. This feature is highly sought after by gamers who require precision in executing complex combinations of keys during gameplay. Additionally, professionals who rely on keyboard shortcuts or individuals who type rapidly benefit from NKRO support.
 
 While both protocols support NKRO, the choice between them depends on other factors like compatibility, hot-swapping, and latency, as discussed in previous sections. In most modern applications, USB keyboards have become the preferred choice due to their universal compatibility and other advantages, and they also offer NKRO support, making them suitable for a wide range of users.
 
 N-Key Rollover is a feature that caters to users who demand exceptional keyboard performance and is a testament to the continuous evolution of keyboard protocols in meeting the diverse needs of computer users.
-
 
 
