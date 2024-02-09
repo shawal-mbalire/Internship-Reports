@@ -46,7 +46,7 @@ WSGI_APPLICATION = 'greenhub_trx.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'greenhub',
         'USER': 'api_user',
         'PASSWORD': 'api_user_password',
