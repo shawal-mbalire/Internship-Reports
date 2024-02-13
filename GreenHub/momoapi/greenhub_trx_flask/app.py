@@ -2,6 +2,7 @@ from flask  import Flask
 from dotenv import load_dotenv
 
 import os
+import requests
 import psycopg2 
 
 load_dotenv()
@@ -22,7 +23,12 @@ conn = psycopg2.connect(
     port     = DATABASE_PORT
 
 )
+cursor = conn.cursor()
+all = cursor.fetchall()
 
 @app.route('/')
 def hello_world():
-    return 'Hello, World!'
+    return all
+
+if __name__ == '__main__':
+    app.run(debug=True)
