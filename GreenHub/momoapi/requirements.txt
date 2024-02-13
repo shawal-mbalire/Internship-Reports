@@ -1,4 +1,6 @@
 django
 djangorestframework
 
-psychopg2
+# psychopg2
+flask 
+python-dotenv
