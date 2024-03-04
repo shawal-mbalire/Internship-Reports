@@ -1,6 +1,0 @@
-django
-djangorestframework
-
-# psychopg2
-flask 
-python-dotenv
