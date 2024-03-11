@@ -1,6 +1,11 @@
 django
+django-seed
 djangorestframework
-psycopg2-binary
+django-contrib-postgres
+django-postgres-extra
+# django-phonenumber-field[phonenumbers]
+
+# psycopg2-binary
 python-dotenv
 requests
 ipykernel
