@@ -18,26 +18,18 @@ DATABASE_PORT     = os.environ['DATABASE_PORT']
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost']
+ALLOWED_HOSTS = ['localhost','127.0.0.1']
 
 INSTALLED_APPS = [
-    # django bloatware apps
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
-    # my apps
+
     'rest_api_app',
 
-    # postgres
-    'django.contrib.postgres',
-    'psqlextra',
-
-    # 'django_seed',
-    # 'phonenumber_field',
 ]
 
 MIDDLEWARE = [
@@ -72,13 +64,12 @@ WSGI_APPLICATION = 'api.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'ENGINE': 'psqlextra.backend',
-        'NAME': DATABASE_NAME,
-        'USER': DATABASE_USER,
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME':     DATABASE_NAME,
+        'USER':     DATABASE_USER,
         'PASSWORD': DATABASE_PASSWORD,
-        'HOST': DATABASE_HOST,
-        'PORT': DATABASE_PORT,
+        'HOST':     DATABASE_HOST,
+        'PORT':     DATABASE_PORT,
     }
 }
 
