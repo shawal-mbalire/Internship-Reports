@@ -1,23 +1,29 @@
-from rest_framework import status
-from rest_framework.response import Response
-from rest_framework.decorators import api_view
-from rest_api_app.models import MyUser
-from rest_api_app.serializers import MyUserSerializer
+from rest_framework import permissions, viewsets
+from rest_api_app.models import MyUser, Transfer, Collection
+from rest_api_app.serializers import MyUserSerializer, TransferSerializer, CollectionSerializer
 
-# Create your views here.
-@api_view(['GET', 'POST'])
-def my_user_list(request):
+class MyUserViewSet(viewsets.ModelViewSet):
     """
-    List all code snippets, or create a new snippet.
+    API endpoint that allows users to be viewed or edited.
     """
-    if request.method == 'GET':
-        snippets = MyUser.objects.all()
-        serializer = MyUserSerializer(snippets, many=True)
-        return Response(serializer.data)
+    queryset = MyUser.objects.all().order_by('-date_joined')
+    serializer_class = MyUserSerializer
+    # permission_classes = [permissions.IsAuthenticated]
 
-    elif request.method == 'POST':
-        serializer = MyUserSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+class TransferViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows Transfers to be viewed or edited.
+    """
+    queryset = Transfer.objects.all()
+    serializer_class = TransferSerializer
+    # permission_classes = [permissions.IsAuthenticated]
+
+    
+class CollectionViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows Transfers to be viewed or edited.
+    """
+    queryset = Collection.objects.all()
+    serializer_class = CollectionSerializer
+    # permission_classes = [permissions.IsAuthenticated]

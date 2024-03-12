@@ -1,14 +1,20 @@
+import uuid
+
 from django.db import models
 from django.contrib.auth.models import AbstractBaseUser
 
 # Create your models here.
 class MyUser(AbstractBaseUser):
-    
-    phone_num = models.IntegerField(primary_key=True)
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    phone_num = models.IntegerField()
     first_name= models.CharField(max_length = 225)
     last_name = models.CharField(max_length = 225)
+    username = models.CharField(max_length = 225, default = "initUser")
     email     = models.EmailField(max_length=254)
     password  = models.CharField(max_length = 225)
+    date_joined = models.DateField()
+
+    USERNAME_FIELD = 'username'
 
 
 
