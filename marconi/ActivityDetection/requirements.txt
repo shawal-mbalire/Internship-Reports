@@ -1,6 +1,6 @@
-pvcobrademo
 vad
 ipykernel
 torchaudio
 matplotlib
 requests
+inaSpeechSegmenter
