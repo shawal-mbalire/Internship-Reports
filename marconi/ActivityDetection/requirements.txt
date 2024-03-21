@@ -3,3 +3,4 @@ vad
 ipykernel
 torchaudio
 matplotlib
+requests
