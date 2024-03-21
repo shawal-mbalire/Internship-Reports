@@ -2,3 +2,4 @@ pvcobrademo
 vad
 ipykernel
 torchaudio
+matplotlib
