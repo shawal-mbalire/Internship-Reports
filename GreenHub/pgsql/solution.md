@@ -11,6 +11,12 @@ Reach out to me if you have any questions and comments.
 
 Postgres 16 was downloaded which came with pg Admin 4 for a gui interface, stackblitz for managing dependancies and psql for command line
 
+## conect to docker
+
+```bash
+sudo docker run --name greenhub_trx -e POSTGRES_PASSWORD=mysecretpassword -v postgres:/var/lib/postgresql/data -p 5432:5432 -d postgres
+```
+
 ## 2- Download PgAdmin - a tool where you can manage PostgresSQL database and run PSQL queries. Research what PSQL is.
 
 Pg Admin 4 was installed in the windows postgres 16 bundle.
