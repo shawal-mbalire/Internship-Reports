@@ -1,0 +1,97 @@
+\documentclass[12pt,a4paper]{report}
+
+\usepackage{lipsum}
+\usepackage{subcaption}
+\usepackage{parskip}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{algorithm}
+\usepackage{setspace}
+\usepackage{color}
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{url}
+\usepackage{cite}
+\usepackage{caption}
+\usepackage[utf8]{inputenc}
+\usepackage{amssymb}
+%\usepackage{lastpage}
+
+\geometry{a4paper,left=30mm,top=20mm,bottom=20mm,}
+
+%\usepackage{hyperref}
+%\usepackage[numbers]{natbib}
+%\newcommand\tab[1][1cm]{\hspace*{#1}}
+%\renewcommand{\thefigure}{\thesection.\arabic{figure}}
+%\usepackage{emptypage}
+%\setstretch{1.5}
+
+\title{
+    \begin{figure}[H]
+        \centering
+        \includegraphics{images/mak_logo.png}
+    \end{figure}
+    \vspace{20pt}
+    \normalsize COLLEGE OF ENGINEERING, DESIGN, ART AND TECHNOLOGY\vspace{15pt}\\
+    DEPARTMENT OF ELECTRICAL AND COMPUTER ENGINEERING\\
+    \vspace{50pt}
+    \textbf{{\large INDUSTRIAL TRAINING REPORT}}
+}
+\author{
+    \normalsize\textbf{SHAWAL MBALIRE} \\
+    \normalsize 21/U/0851 \vspace{50pt} \\
+    \normalsize Supervisor: Dr.\ Peterson\  Mwesigwa\\
+    \vspace{20pt}
+}
+\date{\normalsize \vspace{40pt} September 2024}
+
+
+
+
+\begin{document}
+
+    \maketitle
+
+    \chapter*{Declaration}
+    \input{chapters/declarations.tex}
+
+    \newpage
+    \chapter*{Acknowledgement}
+    \input{chapters/acknoledgements.tex}
+
+    \newpage
+    \chapter*{Preface}
+    \input{chapters/preface.tex}
+
+    \newpage
+    \tableofcontents
+
+    \newpage
+    \listoffigures
+    \addcontentsline{toc}{chapter}{List of Figures}
+
+    \newpage
+    \listoftables
+    \addcontentsline{toc}{chapter}{List of Tables}
+
+    \chapter{Introduction}
+    \input{chapters/introduction.tex}
+
+
+    \newpage
+    \chapter{Literature Review}
+    \input{chapters/literature.tex}
+
+    \newpage
+    \chapter{Work Done}
+    \input{chapters/workdone.tex}
+
+    \newpage
+    \chapter{Conclusions}
+    \input{chapters/conclusions.tex}
+
+    \newpage
+    \bibliographystyle{IEEEtran}
+    \bibliography{references.bib}
+
+\end{document}
